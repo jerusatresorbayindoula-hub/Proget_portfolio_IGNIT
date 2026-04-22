@@ -266,6 +266,49 @@ footer{
     margin-left: 20%;
     margin-bottom: 2%;
   }
+
+  @media (max-width: 768px) {
+
+    .bio-card {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+     .bio-haut {
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    .bio-haut {
+      flex-direction: row;
+      margin-left: 0;
+      justify-content: space-around;
+    }
+     .card {
+      width: 80%;
+    }
+
+    #bio-h1 {
+      font-size: 1.8rem;
+    }
+
+     .card h3 {
+      font-size: 1.2rem;
+    }
+
+    #bio .bio-text {
+      font-size: 0.5rem;
+    }
+
+    #bio-h1 h1 {
+      font-size: 3rem;
+    }
+
+    .bio {
+      padding-top: 20%;
+    }
+    
+  }
   /* Reflet miroir au sol */
 .card::after {
   content: "";
