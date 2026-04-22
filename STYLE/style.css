@@ -224,6 +224,15 @@ footer{
     width: 20%;
     border-radius: 50%;
     box-shadow: #000000 0px 0px 10px;
+    transition: 0.3s ease;
+  }
+
+  .profil:hover{
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: #000000 10px 10px 10px;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
   }
 
   .bio-haut{
