@@ -4,7 +4,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: contain;
-  background-color: rgba(0, 0, 0, 0.657);   /* voile sombre direct */
+  background-color: rgba(0, 0, 0, 0.658);   /* voile sombre direct */
   background-blend-mode: multiply;
   width: 100%;
   position: relative;
@@ -20,7 +20,7 @@ body{
   background: #143b7d93;   /* transparence */
   backdrop-filter: blur(6px);             /* effet verre */
   -webkit-backdrop-filter: blur(6px);     /* compatibilité Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 256, 256, 0.2);
   position: fixed !important;   /* fixée */
   top: 0;            /* collée en haut */
   left: 0;           /* collée à gauche */
@@ -34,7 +34,7 @@ body{
   background-repeat: no-repeat;
   object-fit: contain;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.657);   /* voile sombre direct */
+  background-color: rgba(0, 0, 0, 0.658);   /* voile sombre direct */
   background-blend-mode: multiply;
   width: 100%;
   position: relative;
@@ -60,7 +60,7 @@ body{
   color: rgba(255, 255, 255, 0.8);
 }
 .nav-link.active {
-  color:rgb(67, 67, 252) !important;
+  color:rgb(68, 68, 252) !important;
   font-weight: bold;
 }
 
