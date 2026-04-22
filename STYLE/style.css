@@ -377,12 +377,12 @@ span{
 }
 .inter{
     display: flex;
-    gap:13%;
+    gap:14%;
 
 }
 /* EXPERIENNCES */
 .card2 h3{
-   font-size: 20px;
+   font-size: 21px;
 }
 .experience{
     display: flex;
