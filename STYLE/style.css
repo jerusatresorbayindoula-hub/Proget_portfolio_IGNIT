@@ -163,6 +163,19 @@ footer{
        color: rgb(67, 67, 252);
     }
 
+    #bio-h1 h1 {
+      font-size: 5.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+       color: rgb(67, 67, 252);
+       text-shadow: #000000 10px 0px 10px;
+    }
+
     .bio {
       text-align: center;
       padding-top: 10%;
