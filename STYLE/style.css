@@ -496,7 +496,8 @@ footer {
 
 /* CONTAINER */
 .footer-container {
-  background: #0f172a;
+  padding: 10px;
+  
    backdrop-filter: blur(6px); /* effet de flou derrière */
   -webkit-backdrop-filter: blur(6px); /* compatibilité Safari */
   border: 1px solid rgba(255, 255, 255, 0.2); /* contour subtil */
@@ -583,7 +584,7 @@ footer {
 }
 .mesliens {
     display: flex;
- background-image: url("../media/00dark.png");
+
     height: auto;
     justify-content: space-around;
     color: aliceblue;
