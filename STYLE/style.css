@@ -198,7 +198,7 @@ footer{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* ombre douce */
     text-align: center;
     transition: 0.3s ease;
-    border-left: #163a78 solid 5px;
+    border-left: 6px solid #0177fe;
     overflow: visible; /* permet au reflet de dépasser */
   }
 
@@ -240,9 +240,7 @@ iframe{
   border: 10px solid #011C40;
   
 }
-.coordo{
-   background-color:#1a4794;
-}
+
 .coordo h2{
   color: rgb(246, 237, 237);
   text-align: center;
@@ -447,3 +445,126 @@ span{
   color: #fff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 40px #00ffff;
 }
+/* =========================================================Medias Queries======================================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .hero {
+    padding: 60px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  nav ul li {
+    flex-direction: column;
+  }
+  .experience{
+    flex-direction: column;
+    line-height:normal;
+    text-align: center;
+  }
+  .lots{
+    flex-direction: column;
+    line-height:normal;
+    text-align: center;
+  }
+  .lots h3{
+    text-align: center;
+    font-size:12px
+  }
+  .competences h1{ 
+    font-size:17px;
+  }
+  span{
+    margin-left: 0;
+    margin-right: 0; 
+    font-size: 10px;
+    text-align: left;
+  }
+  .item1{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .lots fieldset{
+    margin: 5%;
+    
+  }
+  .experience{
+    margin: 5%;
+    padding:4%;
+    gap: 3%;
+  }
+  .card2{
+    margin: 0%;
+  }
+  .max{
+    width: 110%;
+  }
+  .coordo h2{
+    font-size: 15px;
+  }
+  input{
+    width: 50%;
+    justify-content: left;
+     margin-left: -25%;
+     font-size: 9px;
+  }
+  textarea{
+    width: 50%;
+    justify-content: left;
+    margin-left: -25%;
+    font-size: 9px;
+
+  }
+  .send{
+    width: 52%;
+    justify-content: left;
+    margin-left: -25%;
+  }
+  .coordo img{
+    width: 230px;
+    height: 360px;
+    margin-left: 25%;
+    margin-top: -120%;
+  }
+  .coordo{
+    margin: auto;
+  }
+  iframe{
+    width:150%;
+    margin-left: 0;
+    margin-top: -1%
+  }
+  .card2 {
+    font-size: 9px;
+ }
+ nav ul {
+  font-size: small;
+  gap: 1px;
+  flex-direction: column;
+  left: 0;
+ }
+ .bio-card{
+  flex-direction: column;  
+ }
+ .bio-h1{
+  font-size: 17px;
+ }
+ .bio-text{
+  text-align: justify;
+ }
+ h1{
+  font-size: 20px;
+ }
+}
+
