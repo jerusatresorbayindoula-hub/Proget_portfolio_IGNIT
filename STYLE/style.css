@@ -396,18 +396,17 @@ footer{
   }
 
   .profil{
-    width: 20%;
+    width: 25%;
     border-radius: 50%;
     box-shadow: #000000 0px 0px 10px;
     transition: 0.3s ease;
   }
 
   .profil:hover{
-    width: 20%;
     border-radius: 50%;
     box-shadow: #000000 10px 10px 10px;
     transform: translateY(-10px);
-    transition: 0.3s ease;
+    
   }
 
   .bio-haut{
@@ -648,12 +647,12 @@ span{
   border: 1px solid rgba(255, 255, 255, 0.2); /* contour subtil */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* ombre douce */
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   border-left: 6px solid #0177fe;
 
 }
  .card2:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   box-shadow: 0 0 20px #00bbff;
  }
 .experience p{
