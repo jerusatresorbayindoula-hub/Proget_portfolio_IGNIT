@@ -154,6 +154,28 @@ footer{
    -webkit-backdrop-filter: blur(6px); /* compatibilité Safari */
 }
 /* BIO */
+
+    #bio-h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+       color: rgb(67, 67, 252);
+    }
+
+    #bio-h1 h1 {
+      font-size: 5.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+       color: rgb(67, 67, 252);
+       text-shadow: #000000 10px 0px 10px;
+    }
+
     .bio {
       text-align: center;
       padding-top: 10%;
@@ -164,7 +186,8 @@ footer{
       font-size: 2.5rem;
       margin-bottom: 20px;
       text-decoration: none;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
+       color: rgb(67, 67, 252);
     }
     .bio-text {
       max-width: 600px;
@@ -201,7 +224,7 @@ footer{
     transition: 0.3s ease;
     border-left: 6px solid #0177fe;
     overflow: visible; /* permet au reflet de dépasser */
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     width: 20%;
   }
 
@@ -477,6 +500,7 @@ span{
   color: #fff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 40px #00ffff;
 }
+<<<<<<< HEAD
 /* =========================================================Medias Queries======================================= */
 @media (max-width: 768px) {
   header {
@@ -601,6 +625,8 @@ span{
  }
 }
 
+=======
+>>>>>>> 95439f752ff4cb94786c83ad98c45d85a9283207
 footer {
    background-image: url("../media/00dark.png");
 }
