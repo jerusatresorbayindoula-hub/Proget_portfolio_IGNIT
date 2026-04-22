@@ -27,8 +27,168 @@ body{
   width: 100%;       /* occupe toute la largeur */
   z-index: 1000;     /* au-dessus du banner */
 }
+/* Apparition du bas vers le haut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Disparition vers le haut */
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+/* Style appliqué aux éléments de la navbar */
+.navbar-glass .nav-item,
+.navbar-glass h2,
+.navbar-glass .form-control,
+.navbar-glass .btn {
+  opacity: 0; /* cachés au départ */
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Option : décalage pour un effet en cascade */
+.navbar-glass .nav-item:nth-child(1) { animation-delay: 0.2s; }
+.navbar-glass .nav-item:nth-child(2) { animation-delay: 0.4s; }
+.navbar-glass .nav-item:nth-child(3) { animation-delay: 0.6s; }
+.navbar-glass .nav-item:nth-child(4) { animation-delay: 0.8s; }
+.navbar-glass .nav-item:nth-child(5) { animation-delay: 1s; }
+.navbar-glass h2 { animation-delay: 0.1s; }
+.navbar-glass .form-control { animation-delay: 1.2s; }
+.navbar-glass .btn { animation-delay: 1.4s; }
+
+/* Classe pour disparition */
+.hide-elements .nav-item,
+.hide-elements h2,
+.hide-elements .form-control,
+.hide-elements .btn {
+  animation: fadeOutUp 0.8s ease forwards;
+}
+/* Apparition du bas vers le haut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Disparition vers le haut */
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+/* BIO section */
+#bio-h1 h1,
+#bio-h1 p,
+.bio-h1,
+.bio-haut img,
+.bio-haut .bio-text,
+.bio-card .card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Effet cascade BIO */
+#bio-h1 h1 { animation-delay: 0.2s; }
+#bio-h1 p { animation-delay: 0.4s; }
+.bio-h1 { animation-delay: 0.6s; }
+.bio-haut img { animation-delay: 0.8s; }
+.bio-haut .bio-text { animation-delay: 1s; }
+.bio-card .card:nth-child(1) { animation-delay: 1.2s; }
+.bio-card .card:nth-child(2) { animation-delay: 1.4s; }
+.bio-card .card:nth-child(3) { animation-delay: 1.6s; }
+.bio-card .card:nth-child(4) { animation-delay: 1.8s; }
+
+/* COMPETENCES section */
+.competences h1,
+.competences h3,
+.competences .item1 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Effet cascade COMPETENCES */
+.competences h1 { animation-delay: 0.2s; }
+.competences h3 { animation-delay: 0.4s; }
+.competences .item1:nth-child(1) { animation-delay: 0.6s; }
+.competences .item1:nth-child(2) { animation-delay: 0.8s; }
+.competences .item1:nth-child(3) { animation-delay: 1s; }
+.competences .item1:nth-child(4) { animation-delay: 1.2s; }
+.competences .item1:nth-child(5) { animation-delay: 1.4s; }
+
+/* Apparition du bas vers le haut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Disparition vers le haut */
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+/* EXPÉRIENCES section */
+.container-experience h1,
+.container-experience .card2 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Effet cascade */
+.container-experience h1 { animation-delay: 0.2s; }
+.container-experience .card2:nth-child(1) { animation-delay: 0.4s; }
+.container-experience .card2:nth-child(2) { animation-delay: 0.6s; }
+.container-experience .card2:nth-child(3) { animation-delay: 0.8s; }
+.container-experience .card2:nth-child(4) { animation-delay: 1s; }
+.container-experience .card2:nth-child(5) { animation-delay: 1.2s; }
+.container-experience .card2:nth-child(6) { animation-delay: 1.4s; }
+.container-experience .card2:nth-child(7) { animation-delay: 1.6s; }
+.container-experience .card2:nth-child(8) { animation-delay: 1.8s; }
+
+/* Classe pour disparition */
+.hide-elements .container-experience h1,
+.hide-elements .container-experience .card2 {
+  animation: fadeOutUp 0.8s ease forwards;
+}
+
 .banner {
-  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,12 +210,6 @@ body{
   animation: glow 5s linear infinite;
 
 }
-@keyframes glow {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-
-
-}
 .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -69,22 +223,22 @@ body{
   text-align: center;
 }
 
-  /* Barre animée */
-  .navbar-glass .nav-link ul li ::after {
+/* Barre animée */
+.navbar-glass .nav-link ul li ::after {
   content: "";
   position: absolute;
   bottom: 40px; 
   top: 50%;            /* distance sous le texte */
-  left: 50%;                /* commence au centre */
+  left: -50%;                /* commence au centre */
   transform: translateX(-50%);
   width: 0;                 /* largeur initiale */
-  height: 2px;              /* épaisseur */
+  height: 6px !important;              /* épaisseur */
   background-color: rgb(67, 67, 252);
   transition: width 0.3s ease;
 }
 
 .navbar-glass .nav-link ul li:hover::after {
-    width: 60%; /* la ligne s’étend sous tout le lien */ 
+    width: 100% !important; /* la ligne s’étend sous tout le lien */ 
   }
 .navbar-glass .nav-link:hover {
   color: rgb(67, 67, 252);        /* couleur au survol */
@@ -124,10 +278,8 @@ body{
 /* Animation au survol */
 .navbar-glass .nav-link:hover::after {
   width: 100%;              /* la barre s’étend sous tout le lien */
-
   
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -267,43 +419,37 @@ footer{
     margin-bottom: 2%;
   }
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
 
     .bio-card {
       flex-direction: column;
       gap: 30px;
     }
-
      .bio-haut {
       flex-direction: column;
       margin-left: 0;
     }
-
     .bio-haut {
       flex-direction: row;
       margin-left: 0;
       justify-content: space-around;
     }
-     .card {
+    .card {
       width: 80%;
     }
-
     #bio-h1 {
       font-size: 1.8rem;
     }
-
      .card h3 {
       font-size: 1.2rem;
     }
-
     #bio .bio-text {
       font-size: 0.5rem;
+      
     }
-
     #bio-h1 h1 {
       font-size: 3rem;
     }
-
     .bio {
       padding-top: 20%;
     }
@@ -346,7 +492,7 @@ iframe{
   color: rgb(246, 237, 237);
   border-radius: 10px;
   width: 35%;
-  padding: 2px;
+  padding: 5px;
   border: none;
   transition: 0.3s ease;
   background: rgba(255, 255, 255, 0.2); /* fond semi-transparent */
@@ -409,8 +555,8 @@ input,textarea{
     margin-bottom: 3%;
 }
 span{
-    margin-left: 5px;
-    margin-right: 5px; 
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 .max{
     width: 200px;
@@ -534,7 +680,7 @@ span{
   transition: 0.3s ease;
 }
 .lots fieldset:hover{
-  transform: scale(1.5);
+  transform: scale(1.05);
 }
 .competences h1{
   text-decoration: none;
@@ -622,7 +768,6 @@ span{
     justify-content: left;
     margin-left: -25%;
     font-size: 9px;
-
   }
   .send{
     width: 52%;
@@ -660,15 +805,28 @@ span{
  }
  .bio-text{
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 0.10rem;
  }
  h1{
-  font-size: 1.5rem !important;
+  font-size: 1.8rem !important;
+ }
+ .bio-haut{
+  gap: 10%;
+ }
+ .bio-haut img{
+  width: 100px;
+ }
+ .bio-card{
+  justify-content: center;
+  align-items: center;
  }
 }
-
 footer {
    background-image: url("../media/00dark.png");
+}
+.footer-col{
+  flex-direction: column !important;
+
 }
 
 /* FOOTER GLOBAL */
@@ -684,12 +842,13 @@ footer {
   box-shadow: 0 8px 32px rgb(225, 222, 222); 
   color: #fff;
   padding: 60px 20px 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* CONTAINER */
 .footer-container {
   padding: 10px;
-  
    backdrop-filter: blur(6px); /* effet de flou derrière */
   -webkit-backdrop-filter: blur(6px); /* compatibilité Safari */
   border: 1px solid rgba(255, 255, 255, 0.2); /* contour subtil */
@@ -801,14 +960,10 @@ align-items: center;
 }
 
  footer h2{
-    text-align: center;
-    
+    text-align: center;    
 align-items: center;
    
 }
-
-
-
  .mesliens img {
     width: 50px;
     height: 50px;
