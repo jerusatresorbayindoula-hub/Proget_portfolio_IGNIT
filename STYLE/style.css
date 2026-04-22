@@ -500,7 +500,6 @@ span{
   color: #fff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 40px #00ffff;
 }
-<<<<<<< HEAD
 /* =========================================================Medias Queries======================================= */
 @media (max-width: 768px) {
   header {
@@ -621,12 +620,10 @@ span{
   font-size: 0.8rem;
  }
  h1{
-  font-size: 20px;
+  font-size: 1.5rem !important;
  }
 }
 
-=======
->>>>>>> 95439f752ff4cb94786c83ad98c45d85a9283207
 footer {
    background-image: url("../media/00dark.png");
 }
