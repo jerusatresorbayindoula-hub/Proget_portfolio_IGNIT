@@ -465,6 +465,10 @@ span{
   border-left: 6px solid #0177fe;
   border-radius: 12px;
   box-shadow: 0 0 20px #00bbff;
+  transition: 0.3s ease;
+}
+.lots fieldset:hover{
+  transform: scale(1.5);
 }
 .competences h1{
   text-decoration: none;
@@ -473,7 +477,6 @@ span{
   color: #fff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 40px #00ffff;
 }
-<<<<<<< HEAD
 /* =========================================================Medias Queries======================================= */
 @media (max-width: 768px) {
   header {
@@ -591,13 +594,13 @@ span{
  }
  .bio-text{
   text-align: justify;
+  font-size: 0.8rem;
  }
  h1{
   font-size: 20px;
  }
 }
 
-=======
 footer {
    background-image: url("../media/00dark.png");
 }
@@ -777,4 +780,3 @@ align-items: center;
     padding: 0;
     box-shadow: 0px 10px 10px  rgb(24, 23, 23);
 }
->>>>>>> 848d3ceb8e5e6fe631db7eb360044668a8cf364a
